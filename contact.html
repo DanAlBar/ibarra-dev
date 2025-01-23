@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Brand Salon</title>
+    <link href="css/salon.css" rel="stylesheet">
+    <link href="favicon.ico" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <a href="#main-content" id="skip-link">Skip to main content</a>
+      <header role="banner">
+        <div>
+          <h1>Contact</h1>
+        </div>
+        <div>
+          <img src="assets/images/logo.gif" width="330" height="97" alt="Brand logo.">
+        </div>
+      </header>
+      <nav role="navigation">
+        <label for="nav-box" id="nav-trigger" class="visuallyhidden">Menu</label>
+        <input id="nav-box" type="checkbox" aria-label="Toggle navigation menu.">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services & Team</a></li>
+          <li><a href="contact.html" id="current-page">Contact</a></li>
+        </ul>
+      </nav>
+      <main id="main-content" tabindex="-1" role="main">
+        <h2>Connect with us</h2>
+        <address>
+          <ul>
+            <li class="item-phone">828.111.1234</li>
+            <li class="item-email"><a href="mailtp:Brandsalon@example.com">BrandSalon@example.com</a></li>
+          </ul>
+        </address>
+        <table>
+          <caption>Business Hours</caption>
+          <tr>
+            <td></td>
+            <th scope="col">Open</th>
+            <th scope="col">Close</th>
+          </tr>
+          <tr>
+            <th scope="row">Mon - Sat</th>
+            <td>9am</td>
+            <td>5pm</td>
+          </tr>
+          <tr>
+            <th scope="row">Sun</th>
+            <td colspan="2">Closed</td>
+          </tr>
+          <tr>
+            <th scope="row">DEC 24</th>
+            <td colspan="2">Closed</td>
+          </tr>
+          <tr>
+            <th scope="row">JAN 1</th>
+            <td colspan="2">Closed</td>
+          </tr>
+        </table>
+        <p>Use the form below to make an appointment with one of our amazing stylists! Fields with a * are required</p>
+        <form action="unit-3-form-handler.html" method="get" role="form">
+          <fieldset>
+            <legend>Contact Info</legend>
+            <label for="fname">*First Name:</label>
+            <input type="text" id="fname" name="First Name" required><br>
+
+            <label for="lname">*Last Name:</label>
+            <input type="text" id="lname" name="Last Name" required><br>
+
+            <label for="email">*Email:</label>
+            <input type="email" id="email" name="Email" required><br>
+
+            <label for="phone">*Phone:</label>
+            <input type="tel" id="phone" name="Phone" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Scheduling</legend>
+            <label for="type">*What type of hair consultation will you be needing?</label><br>
+            <input type="text" id="type" name="Consultation Type" list="events" required><br>
+            <datalist id="events">
+              <option>Casual</option>
+              <option>Baptism</option>
+              <option>Birthday</option>
+              <option>Briss</option>
+              <option>Funeral</option>
+              <option>Mitzvah</option>
+              <option>Opening</option>
+              <option>Quincaenera</option>
+              <option>Wedding</option>
+              <option>Other...</option>
+            </datalist>
+
+            <label for="number">*Approximately how many people?</label><br>
+            <input type="number" id="number" name="Number of People" min="1" required><br>
+
+            <label for="date">*Appointment Date:</label><br>
+            <input type="date" id="date" name="Appointment Date" required><br>
+
+            <fieldset>
+              <legend>*Will you be adding color to your hair? If so, tell us what you had in mind in the comments section below.</legend>
+              <input type="radio" name="Specific Colors" id="no-color" value="No" required><label for="no-color">No</label><br>
+              <input type="radio" name="Specific Colors" id="yes-color" value="Yes"><label for="yes-color">Yes</label>
+            </fieldset>
+
+            <label for="comments">Other details, requests, or comments?</label><br>
+            <textarea cols="50" rows="6" id="comments" name="Comments"></textarea>
+          </fieldset>
+        </form>
+      </main>
+
+      <footer role="contentinfo">
+        <p>All content &copy; BrandSalon</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

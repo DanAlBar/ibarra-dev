@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa&family=Merriweather&family=Tajawal&display=swap');
+
+/********** General Styles **********/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 17px/1.5 'Tajawal', sans-serif;
+}
+
+body {
+  background: url(../assets/images/scissors-closed.png);
+  margin: auto;
+}
+
+#wrapper {
+  background-color: rgba(66, 64, 64, .9);
+  margin: 0 auto 0;
+  max-width: 1200px;
+  width: 70%;
+
+}
+
+#wrapper,
+footer {
+  color: #fff;
+}
+
+h1,
+header p,
+main h2,
+.phone {
+  font-family: 'Merriweather', serif;
+  text-shadow: 0 0 5px #fff;
+}
+
+img {
+  box-shadow: 0 0 20px #fff;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Widths for blocks centered on page */
+
+
+
+/********** Header **********/
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
+header div {
+  flex: 1;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  padding-top: 1.5rem;
+}
+
+header p {
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+header div:last-child {
+  flex: 1;
+  margin: auto;
+}
+
+header img {
+  display: block;
+  margin: auto;
+}
+
+/********** Navbar **********/
+
+#skip-link {
+  background-color: #000;
+  border: #fff double 6px;
+  color: #fff;
+  padding: .5rem;
+  position: absolute;
+  text-decoration: none;
+  top: -9999px;
+}
+
+#skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+nav {
+  background-color: #000;
+  left: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#nav-box,
+#nav-trigger {
+  display: none;
+}
+
+nav ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+#current-page {
+  text-decoration: overline wavy;
+}
+
+/********** Main **********/
+
+main {
+  text-align: center;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+main section:last-child {
+  display: block;
+}
+
+main h2 {
+  font-size: 60px;
+  margin: 0;
+}
+
+main img {
+  flex: 1;
+}
+
+main p {
+  font-size: 20px;
+  flex: 1;
+  margin: auto;
+  padding: .5rem;
+}
+
+.phone {
+  font-size: 50px;
+}
+
+/********** Flex box **********/
+
+#flex-box {
+  text-align: center;
+}
+
+#columns section,
+#row section {
+  display: block;
+}
+
+/********** Contact page **********/
+
+address {
+  font-style: normal;
+}
+
+address,
+table {
+  text-align: center;
+  margin: auto;
+}
+
+form > fieldset {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+fieldset fieldset {
+  border: none;
+  padding-left: 0;
+}
+
+form > fieldset > legend {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+form > fieldset:first-of-type label {
+  display: block;
+}
+
+input:not([type='radio']) {
+  margin-bottom: 1rem;
+}
+
+input[type='radio']:nth-of-type(even) {
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #636348;
+  color: #fff;
+}
+
+/********** Footer **********/
+
+footer {
+  background-color: #000;
+  margin-top: 0;
+  padding: .5rem;
+  text-align: right;
+}
+
+/********** Fluid text **********/
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: calc(35px + (60 - 35) * (100vw - 320px) / (1200 - 320));
+  }
+
+  header p {
+    font-size: calc(23px + (34 - 23) * (100vw - 320px) / (1200 - 320));
+  }
+
+  h1 {
+    font-size: calc(23px + (60 - 23) * (100vw - 320px) / (1200 - 320));
+  }
+
+  h1 {
+    font-size: calc(23px + (50 - 23) * (100vw - 320px) / (1200 - 320));
+  }
+}
+
+/********** 1030 **********/
+
+
+@media screen and (max-width: 1030px) {
+  #wrapper {
+    width: 90%;
+  }
+}
+
+/********** 825 **********/
+
+
+@media screen and (max-width: 825px) {
+  #wrapper {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    border-radius: 0;
+    box-shadow: none;
+    left: 0;
+    margin-left: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  nav ul {
+    display: none;
+    padding: 0;
+  }
+
+  nav li {
+    display: block;
+  }
+
+  nav a {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    color: #ddd;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+  }
+
+  #current-page {
+    background-color: #444;
+    color: #fff;
+    text-shadow: none;
+  }
+
+  #nav-trigger {
+    border-bottom: #000 solid 2px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #nav-box:checked + ul {
+    display: block;
+  }
+
+  .visuallyhidden {
+    clip: unset;
+    clip-path: unset;
+    height: 100%;
+    position: static;
+    width: 100%;
+  }
+
+  main section {
+    display:block;
+  }
+}
+
+/***** Minimum font size *****/
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  header p {
+    font-size: 23px;
+  }
+
+  main h2 {
+    font-size: 23px;
+  }
+
+  .phone {
+    font-size: 23px;
+  }
+}
