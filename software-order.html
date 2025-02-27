@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--	Author: 
+		Date:	
+		File:	software-order.html
+		Purpose: OOP Exercise
+-->
+
+<html>
+<head>
+	<title>OOP Exercise</title>
+	<link rel ="stylesheet" type="text/css" href="sample.css" />
+</head>
+<nav role="navigation">
+  <label for="nav-box" id="nav-trigger" class="visuallyhidden">Menu</label>
+  <input id="nav-box" type="checkbox" aria-label="Toggle navigation menu.">
+  <ul>
+    <li><a href="index.html" id="current-page">Home</a></li>
+    <li><a href="services.html">Services & Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="software-order.html">Applications</a></li>
+  </ul>
+</nav>
+<body>
+	<h1>Software Order</h1>
+		<form action="software-order.php" method="post">
+			<label>Cost of Software:
+                <input type="text" size = "10" name="cost"></label>
+			<label>Number of Copies:
+                <input type="text" size = "10" name="items"></label>
+		<input class = "submit" type = "submit" value = "Submit Software Order">
+	</form>
+</body>
+</html>
