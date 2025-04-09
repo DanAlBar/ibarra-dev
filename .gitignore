@@ -408,3 +408,4 @@ sas/**/private/db_credentials.php
 # Ignore cache or upload folders (if any)
 cache/
 uploads/
+ibarra-dev-clean/
