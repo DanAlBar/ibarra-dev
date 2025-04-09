@@ -396,3 +396,14 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Ignore sensitive PHP configuration files
+private/db_credentials.php
+
+# Ignore any logs or temporary dev files
+*.log
+*.tmp
+
+# Ignore cache or upload folders (if any)
+cache/
+uploads/
