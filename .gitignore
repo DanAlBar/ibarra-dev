@@ -399,6 +399,7 @@ FodyWeavers.xsd
 
 # Ignore sensitive PHP configuration files
 private/db_credentials.php
+sas/**/private/db_credentials.php
 
 # Ignore any logs or temporary dev files
 *.log
