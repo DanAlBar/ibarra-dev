@@ -237,6 +237,24 @@ textarea:focus {
   color: #fff;
 }
 
+/********** WEB-182 page **********/
+
+/* Style for link buttons */
+ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+  background-color: #333;
+}
+
+
 /********** Footer **********/
 
 footer {
